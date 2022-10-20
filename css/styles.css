@@ -1,4 +1,18 @@
-[button] {
+div{
+    text-align: center;
+}
+
+#button {
     background: white;
+    display: inline;
+    }
+#knopf{
     color: red;
+    font-size: 34px;
+    margin: 0px;
+}
+#REC{
+    color: black;
+    margin:0px;
+    margin-top: 8px;
 }

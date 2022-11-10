@@ -2,9 +2,6 @@ body {
     margin: 0;
     background-color: rgb(226, 226, 226);
 }
-div{
-    text-align: center;
-}
 
 #button {
     background: white;
@@ -20,13 +17,18 @@ div{
     margin:0px;
     margin-top: 8px;
 }
+h1{
+    margin:0;
+    padding: 0.2em;
+}
 header{
+    margin:0;
     color: #FFFFFF;
     background: rgb(175, 175, 175);
     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
     
     font-family: Copperplate, Papyrus, fantasy;
-    font-size: 5em;
+    font-size: 2.2em;
 
     text-align: center;
 }
@@ -34,10 +36,10 @@ nav{
     background: rgb(145, 145, 145);
 
     align-items: center;
-    font-size: 1.5em;
+    font-size: 0.6em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0em;
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +51,7 @@ nav{
     border-bottom-style: solid;
     border-left-style: none;
     border-right-style: none;
-    border-width: 0.2em;
+    border-width: 0.1em;
 }
 nav [href]{
     color: rgb(255, 0, 0);
@@ -64,7 +66,7 @@ nav [href]{
 }
 nav [href]:hover{
     color: rgb(160, 0, 0);
-    top: -2.5px;
+    top: -2px;
 }
 
 .menu{
@@ -86,3 +88,19 @@ nav [href]:hover{
     border-width: 0.25em;
     
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { grid-area: 2 / 2 / 3 / 3; }
+.div2 { grid-area: 2 / 3 / 3 / 4; }
+.div3 { grid-area: 2 / 4 / 3 / 5; }
+.div4 { grid-area: 3 / 2 / 4 / 3; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
+.div6 { grid-area: 3 / 4 / 4 / 5; }
+.div7 { grid-area: 4 / 3 / 5 / 4; }

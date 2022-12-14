@@ -16,12 +16,40 @@ a2.textContent = "Aufnahmen";
 
 nav.append(a1, a2);
 
-let divRec = document.getElementById(flexbox-panel)
-let instrument = document.createElement(div1, div2, div3, div4, div5, div6, div7);
-instrument.addEventListener("click", clickInstrument);
+/*let div1 = document.getElementById('div1');
 
-function clickInstrument(img){
-    document.getElementByClassName("parent");
-    let recBox = documentCreateElement(img);
-    divRec.append(img);
-}
+div1.addEventListener("click", playHiHat);
+*/
+
+// Audio-Dateien laden
+//var bassdrum = new Audio("bassdrum.mp3");
+var becken1 = new Audio("sounds/becken1.mp3");
+var becken2 = new Audio("sounds/becken2.mp3");
+var becken3 = new Audio("sounds/becken3.mp3");
+var snare = new Audio("sounds/snare.mp3");
+var hihat = new Audio("sounds/hihat.mp3");
+
+// Event Listener hinzufügen
+document.getElementById("becken1").addEventListener("click", function() {
+    becken1.play();
+    console.log("becken1");
+});
+
+document.getElementById("becken2").addEventListener("click", function() {
+    becken2.play();
+    console.log("becken2");
+});
+
+document.getElementById("becken3").addEventListener("click", function() {
+    becken3.play();
+    console.log("becken3");
+});
+
+document.getElementById("snare").addEventListener("click", function() {
+  snare.play();
+});
+
+document.getElementById("hihat").addEventListener("click", function() {
+  hihat.play();
+  console.log("hihat");
+});

@@ -16,20 +16,16 @@ a2.textContent = "Aufnahmen";
 
 nav.append(a1, a2);
 
-/*let div1 = document.getElementById('div1');
 
-div1.addEventListener("click", playHiHat);
-*/
 
-// Audio-Dateien laden
-//var bassdrum = new Audio("bassdrum.mp3");
+//var kick = new Audio("kick.mp3");
 var becken1 = new Audio("sounds/becken1.mp3");
 var becken2 = new Audio("sounds/becken2.mp3");
 var becken3 = new Audio("sounds/becken3.mp3");
 var snare = new Audio("sounds/snare.mp3");
 var hihat = new Audio("sounds/hihat.mp3");
 
-// Event Listener hinzufügen
+
 document.getElementById("becken1").addEventListener("click", function() {
     becken1.play();
     console.log("becken1");

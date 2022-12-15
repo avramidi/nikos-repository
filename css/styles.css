@@ -36,7 +36,7 @@ nav{
 
     align-items: center;
     font-size: 0.6em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Helvetica, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0em;
     padding: 0.5em;
     display: flex;
@@ -110,7 +110,7 @@ nav [href]:hover{
 
 
 
-#flexbox-panel {
+#played {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;

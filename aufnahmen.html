@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DRUMREC.</title> 
         <link rel="stylesheet" href="css/styles.css" />
-        <script src="script.js" defer></script>
+        <script src="navigation.js" defer></script>
+        <script src="history.js" defer></script>
 
     </head>
 
@@ -14,8 +15,19 @@
         <main>
             
             <div>
-                <button id="delete">Löschen</button>           
-                <button id="edit">Bearbeiten</button>
+                <table id="table">
+                    <caption>History Drums</caption>
+                    <thead>
+                      <tr id="th">
+                        <th>Name</th>
+                        <th>History</th>
+                        <th>Date</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id ="drumrecHistory">
+                    </tbody>
+                  </table>
             </div>    
         </main>
 </html>
